@@ -1,0 +1,731 @@
+@font-face {
+    font-family: ZonaPro;
+    src: url("./fonts/ZonaPro-Regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ZonaPro;
+    src: url("./fonts/ZonaPro-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ZonaPro;
+    src: url("./fonts/ZonaPro-Light.otf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("./fonts/OpenSans-Light.otf");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("./fonts/ZonaPro-Regular.otf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("./fonts/ZonaPro-Bold.otf");
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    font-family: ZonaPro, sans-serif;
+}
+
+.branding {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.search{
+    position: absolute;
+    right: 190px;
+    top:145px;
+    border-bottom: 2px solid #BBBBBB;
+    
+
+}
+
+/*Search Bar*/
+.search input{
+    border: none; 
+    width: 130px;  
+}
+
+::placeholder{
+    color: #BBBBBB;;
+
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+   
+
+}
+
+
+
+/*Nav Bar*/
+nav.navigation {
+    border-top: 1px solid #0BABCE;
+    border-bottom: 1px solid #DEDEDE;
+    
+}
+
+nav.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 -14px;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav.navigation ul li a {
+    padding: 24px 14px;
+    line-height: 22px;
+    display: block;
+    text-decoration: none;
+    color: #58585A;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    z-index: 4;
+}
+
+/* Hover effect on Nav Bar */
+nav.navigation ul li a:hover  {
+    background-color: #0898B8;
+    color: #FFFFFF;
+
+}
+
+
+/* Dropdown menu with hover */
+.dropdown .brain-menu{
+    display: none;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 3;
+    width: 340px;
+    height: 270px;
+    margin-left: 0px;
+    margin-top: 10x;
+    top: 220px;
+}
+
+.dropdown:hover .brain-menu{
+    display: flex;
+}
+
+.dropdown  .brain-menu li a{
+    padding:0px 14px;
+    border-bottom:1px solid rgba(8, 152, 184, 0.6);
+    width: 300px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 34px; 
+}
+
+
+.dropdown .brain-menu li a:hover{
+    background-color: #0898B8;
+    color: #FFFFFF;
+}
+
+
+
+/*---- Section highlight -----*/
+
+#highlight {
+    background: #F7F7F7;
+    position: relative;
+}
+
+#highlight:after {
+    content: "";
+    background: #DFE3E4;
+    display: block;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#slide {
+    background: url("./images/hero.jpg") center top no-repeat;
+    min-width: 980px;
+    height: 391px;
+    position: relative;
+    z-index: 2;
+}
+
+.slide-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+
+.slide-text {
+    width: 470px;
+    color: #58585A;
+    
+}
+
+.slide-text h1 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.slide-text h1 span {
+    font-weight: 100;
+}
+
+.slide-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+/*----- Buttons "More" and "Contact" ------*/
+.btns {
+    display: flex ;
+    margin-top: 20px;
+
+}
+
+.btn-style {
+    display: flex;
+    border: 1px solid #0898B8;
+    background-color: #0898B8;
+    align-items: center;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.25)
+}
+
+.btn-more {
+    width: 150px;
+    height: 40px;         
+}
+
+.btn-style a {
+    text-decoration: none;
+    color: #ebe8e8;  
+}
+
+.btn-style h4 {
+    font-size:12px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+
+.btn-more  h4 {
+    padding: 10px 10px 10px 20px;  
+}
+
+.btn-contact {
+    width: 240px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.btn-contact h4 {
+    padding: 10px 3px 10px 17px;
+}
+
+ .btn-style a img {
+    padding-top: 4px; 
+}
+
+/*----- Section highlight2 -------*/
+
+#highlight2 {
+    background-color: #EEEEEE;
+    
+}
+
+.surgery {
+    
+    height: 280px;
+    min-width: 980px;
+}
+
+.images {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+}
+
+.image1 {
+    background-image: url("./images/brain-surgery.png");
+}
+.image2 {
+    background-image: url("./images/spine-surgery.png");
+}
+
+.image3 {
+    background-image: url("./images/xray-surgery.png");
+}
+
+.img-style {
+    width: 300px;
+    height: 200px;  
+    position: relative;
+
+}
+
+.text-background {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    background-color: rgba(8, 152, 184, 0.8);
+    display: flex;
+    bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-background a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.text-background h4 {
+    font-size:20px;
+    font-weight: 700;
+    margin:0px 20px;
+    line-height: 17px;
+    
+}
+
+.text-background h4 span {
+    font-size:20px;
+    font-weight:100;
+    font-size:19px;
+        
+    }
+
+    .text-background img {
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+
+
+    /*----- Section highlight3 ------*/
+
+    #highlight3 {
+        background-color: #FFFFFF;
+        min-width: 980px;
+        height: 375px;
+        display: flex;
+        justify-content: center;
+   
+    }
+
+   .details {
+    border-top: 1px solid #0BABCE;
+    width: 980px;
+    height: 240px;
+    margin-top: 100px ;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+   }
+
+   .text p {
+    width: 310px;
+    height: 180px;
+    font-family: OpenSans, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #58585A;
+    font-weight: light;
+   }
+
+    .text h3 {
+        color: #58585A; 
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 600;
+
+    }
+   .purpose img {
+    position: absolute;
+    left: 170px;
+    top: -55px;
+   }
+
+   .philosophy img {
+    position: absolute;
+    left: 510px;
+    top: -55px;
+   }
+
+   .specificity img {
+    position: absolute;
+    left: 850px;
+    top: -55px;
+   }
+
+    /*----- Section highlight4 -----*/
+
+#highlight4{
+    background-color: #EEEEEE;
+    min-width :980px; 
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    
+    }
+
+    .testimonials {
+        width: 980px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .left{
+        width: 640px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .left .img-quotes {
+        margin-right: 20px;
+
+    }
+
+    .left .text-patient {
+        color: #58585A;
+        font-family: OpenSans,sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-top: -16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left .text-patient .arrows .right-arrow {
+        margin-right: 40px;
+
+    }
+    
+    .right {
+        
+        background-color: #E6E6E6;
+        width: 320px;
+        padding-left: 20px;
+    }
+
+    .right .text-procedure {
+        color: #58585A;
+        font-family: OpenSans,sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 22px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials:after {
+        content: "";
+        background-color: #E6E6E6;
+        display: block;
+        height: 100%;
+        width:100%;
+        position: absolute;
+        z-index: 1;
+        left: 977px;
+    }
+
+    /*----- Section highlight5 ------*/
+
+#highlight5 {
+   
+    background-color: #FFFFFF;
+    min-width :980px; 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.information{
+    
+    width: 980px;
+    display: flex;
+
+}
+
+.text-info {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.text-info p {
+    color: #58585A;
+        font-family: OpenSans,sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 22px;
+}
+
+.information .text-info .arrows .right-arrow {
+    margin-right: 40px;
+
+}
+
+.img-info {
+    
+    width: 680px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-style {
+   
+    width: 150px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.tumour {
+    background-image: url("./images/tumour.png");
+    
+}
+
+.waist {
+    background-image: url("./images/waist.png");
+}
+
+.diagnostics {
+    background-image: url("./images/diagnostics.png");
+}
+
+.biopsy {
+    background-image: url("./images/biopsy.png");
+}
+
+.info-background {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(8, 152, 184, 0.8);
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+ .info-background h5 { 
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    color: white; 
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 3px;
+    margin-top: 3px;    
+} 
+
+.extra1 h5 {
+    line-height: 12px;
+}
+
+.extra2 h5 {
+    line-height: 12px;
+    padding-left: 10px;
+}
+
+
+
+/*------ Section highlight6 -------*/
+
+#highlight6 {
+    min-width :980px; 
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-image: url("./images/bar\ 1\ .png");
+}
+
+.download {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-download {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;  
+}
+
+/*------ Section highlight7 -------*/
+
+#highlight7 {
+    min-width :980px; 
+    height: 300px;
+    display: flex;
+    justify-content: center;   
+}
+
+.bottom-nav {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-list {
+    width: 300px;
+    height: 300px;   
+}
+
+.nav-list ul {
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+.nav-list h4  {  
+    color: #0898B8;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+.nav-list li {  
+    border-bottom:1px solid rgba(8, 152, 184, 0.6);
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 14px;   
+    line-height: 24px;   
+}
+
+.lineh1 li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.lineh2 li a {
+    line-height: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*------ FOOTER ------*/
+
+footer{
+    min-width: 980px;
+    height: 180px;
+    background-color:#58585A;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+  
+    width: 980px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.text-up {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.up-left {
+    display: flex;
+    align-items: center;
+    width: 454px;
+}
+
+.up-left p {
+    color: #FFFFFF;
+    font-family: OpenSans,sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 17px;
+}
+
+.up-right {
+    
+    width: 230px;
+}
+
+.up-right ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+}
+.up-right li {
+
+    list-style-type: none;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.up-right li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.text-down {
+    width: 100%;
+    height: 50px;
+}
+
+.text-down p {
+    color: #FFFFFF;
+    font-family: OpenSans,sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 16px;
+    margin-top: 0px;
+}
